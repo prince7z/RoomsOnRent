@@ -167,9 +167,14 @@ footer {
         z-index: 10;
     }
 
-    nav ul.show {
-        display: flex;
-    }
+   nav ul.show {
+    display: flex;
+    flex-direction: column;
+    background-color: #3E5151; /* Add any background for the dropdown */
+    padding: 10px;
+    border-radius: 8px;
+}
+
 
     .hamburger {
         display: block;
