@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RoomOnRent</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pannellum/build/pannellum.css">
+</head>
+<body>
+    <header>
+    <div class="logo">
+        <img src="logo (1).svg" alt="Logo">
+        <br>
+        <span>RoomOnRent</span>
+    </div>
+     
+        <nav>
+            <ul id="nav-links">
+                <li><button onclick="showRoomTour()">Room Tour</button></li>
+                <li><button onclick="showContent('Dimensions')">dimensions</button></li>
+                <li><button onclick="showContent('Facilities')">Facilities</button></li>
+                <li><button onclick="showContent('RentalPrice')">Rental Price</button></li>
+                <li><button onclick="showContent('Rules')">Rules</button></li>
+                <li><button onclick="showContent('Contact')">Contact</button></li>
+            </ul>
+        </nav>
+        <button class="hamburger" onclick="toggleMenu()">☰</button>
+    </header>
+
+    <main>
+        <div class="content" id="content">
+            <p>Welcome to RoomOnRent! Please select an option above to explore our offerings.</p>
+        </div>
+    </main>
+
+    <footer>
+        <div class="contact">
+            
+            <div class="contact-column left">
+                <p>✉️ Email: </p> <p></p><a href="mailto:princesahu17125@gmail.com">princesahu17125@gmail.com</a></p>
+            </div>
+    
+            
+            <div class="contact-column center">
+                <h2>Contact Us</h2>
+            </div>
+    
+            
+            <div class="contact-column right">
+                <p>🌐 Follow us on</p> <p></p> <a href="https://www.linkedin.com/in/princesahu7z">LinkedIn</a>, 
+                <a href="https://www.instagram.com/prince.7z/">Instagram</a>.</p>
+            </div>
+        </div>
+    </footer>
+    
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/pannellum/build/pannellum.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
