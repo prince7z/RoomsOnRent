@@ -27,7 +27,7 @@ Rules: `
 `,
 Contact: `
     <h2>Contact</h2>
-    <p>📞 Phone: <a href="tel:+916266034195">+91 6266034195</a></p>
+    <p>📞 Phone: <a href="tel:+916266******">+916266</a></p>
     <p>✉️ Email: <a href="mailto:princesahu17125@gmail.com"target="_blank" rel="noopener noreferrer">princesahu17125@gmail.com</a></p>
     <p>🌐 Follow us on <a href="https://www.linkedin.com/in/princesahu7z"target="_blank" rel="noopener noreferrer">LinkedIn</a> or 
        <a href="https://www.instagram.com/prince.7z/"target="_blank" rel="noopener noreferrer">Instagram</a></p>
