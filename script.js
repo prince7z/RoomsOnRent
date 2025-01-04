@@ -69,3 +69,11 @@ function toggleMenu() {
     const navLinks = document.getElementById("nav-links");
     navLinks.classList.toggle("show");
 }
+
+document.querySelectorAll("#nav-links li").forEach(item => {
+    item.addEventListener("click", () => {
+        const navLinks = document.getElementById("nav-links");
+        navLinks.classList.remove("show");
+    });
+});
+
