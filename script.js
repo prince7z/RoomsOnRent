@@ -1,42 +1,54 @@
-// Dynamic content for each button
+
 console.log("JavaScript is connected!");
 const contentData = {
-    facilities: `
+    Facilities: `
     <h2>Facilities</h2>
     <p>- 24-hour electricity supply (₹10/unit as per usage)</p>
     <p>- 24/7 water supply</p>
-    <p>- Shared bathroom and balcony</p>
+    <p>- Shared bathroom and balcony </p>
 `,
-dimensions: `
+Dimensions: `
     <h2>Dimensions</h2>
-    <p>- Hall: </p>
-    <p>- Kitchen: </p>
-    <p>- Balcony: </p>
+    <p>- Hall: 15 Length ×10 Breadth =150  square feet</p>
+    <p>-Kitchen: 10 Length×10 Breadth =100 square feet</p>
+    <p>- Balcony: 265 square feet  </p>
 `,
-rentPrice: `
-    <h2>Rent Price</h2>
-    <p>₹4,500 per month (Non-Negotiable)</p>
-    <p>₹200 additional for Wi-Fi</p>
+RentalPrice: `
+    <h2>Rental Price</h2>
+    <p>₹4,500 per month (Non-negotiable)</p>
+    <p>₹200 additional for Wi-Fi services</p>
 `,
-rules: `
+Rules: `
     <h2>Rules</h2>
     <p>- No loud music after 10:00 PM</p>
-    <p>- No unauthorized guests allowed</p>
-    <p>- Maintain cleanliness at all times</p>
-    <p>- Rent must be paid by the 10th of every month</p>
+    <p>- Guests are not allowed without prior authorization</p>
+    <p>- Maintain cleanliness in shared spaces</p>
+    <p>- Rent must be paid by the 10th of each month</p>
 `,
-contact: `
+Contact: `
     <h2>Contact</h2>
     <p>📞 Phone: <a href="tel:+916266034195">+91 6266034195</a></p>
     <p>✉️ Email: <a href="mailto:princesahu17125@gmail.com">princesahu17125@gmail.com</a></p>
+    <p>🌐 Follow us on <a href="www.linkedin.com/in/princesahu7z">LinkedIn</a> or 
+       <a href="https://www.instagram.com/prince.7z/">Instagram</a></p>
 `,
-
 };
 
 function showContent(type) {
     const contentDiv = document.getElementById("content");
-    contentDiv.innerHTML = contentData[type];
-    contentDiv.scrollIntoView({ behavior: "smooth" });
+
+    if (contentData[type]) {
+        contentDiv.innerHTML = contentData[type];
+
+       
+        contentDiv.classList.remove("fade");
+        void contentDiv.offsetWidth; 
+        contentDiv.classList.add("fade");
+
+        contentDiv.scrollIntoView({ behavior: "smooth" });
+    } else {
+        contentDiv.innerHTML = `<p>Content not found for "${type}".</p>`;
+    }
 }
 function showRoomTour() {
     const contentDiv = document.getElementById("content");
@@ -52,7 +64,7 @@ function showRoomTour() {
     contentDiv.scrollIntoView({ behavior: "smooth" });
 }
 
-// Toggle hamburger menu
+
 function toggleMenu() {
     const navLinks = document.getElementById("nav-links");
     navLinks.classList.toggle("show");
