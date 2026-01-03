@@ -15,7 +15,7 @@ Dimensions: `
 `,
 RentalPrice: `
     <h2>Rental Price</h2>
-    <p>₹4,500 per month (Non-negotiable)</p>
+    <p>₹5,000 per month (Non-negotiable)</p>
     <p>₹200 additional for Wi-Fi services</p>
 `,
 Rules: `
